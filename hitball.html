@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ground{ border: 1px solid; text-align: center;color :yellow;background-color:black;}
+.imgpac{display:block; width:15px; height:15px; margin-left: auto; margin-right: auto;}
+</style>
+<script src="./hitball.js"></script>
+</head>
+<body onload="Starthitball();">
+<center>
+<img src="ball.gif" style="display:block; width:150px; height:50px;">
+<h3> HitBall Controlls</h3>
+<table>
+<tr>
+<td>
+<img class="imgpac" src="ball.gif">
+</td>
+<td><span> --> Ball</span></td>
+</tr>
+<tr>
+<td><---</td>
+<td><span>Move Left</span></td>
+<td>---></td>
+<td><span> Move Right</span></td>
+</tr>
+</table>
+<h4 style="color:Red">OBJECTIVE : Save ball to fall on red Area ! </h4>
+<button onclick="willStart();"><input type="text" placeholder="Click here to start the game" id="control" onkeydown="controls(event);"/></button>
+<button onclick="reset();">ReStart</button>
+<h5 style="color:Red" id="notify"></h5>
+<table id="GameGround" class="ground">  
+</table>
+</center>
+</body>
+</html>
